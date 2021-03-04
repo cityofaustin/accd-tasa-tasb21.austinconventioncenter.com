@@ -1,1 +1,140 @@
+title: "2021 TASA/TASB Convention"
+description: Your one-stop shop for planning your event at the Austin Convention Center
+url: //tasa-tasb21.austinconventioncenter.com
+event_coordinator:
+  name: Jennifer Shira
+  email: jennifer.shira@austintexas.gov
+  phone: 5124044209
+utility_coordinator:
+  name: Diane Armstrong, EMPA, CEM
+  email: diane.armstrong@austintexas.gov
+  phone: 5124044226
+security_coordinator:
+  name: Donnell James
+  email: Donnell.James@austintexas.gov
+  phone: 5124044109
+sales_manager:
+  name: Jeff Kuryak
+  email: jeff.kuryak@austintexas.gov
+  phone: 5124044042
+catering_manager:
+  name: Kerry Craig
+  email: kcraig@levyrestaurants.com
+  phone: 5124044137
+incentive_rate_deadline: 2021-08-25 
+floor_plan_deadline: 2021-02-25 
+sign_submission_deadline: 2021-06-25 
 theme: 
+remote_theme: cityofaustin/jekyll-theme-kocurek@v0.3.3
+searchable: true
+printable: true
+collections_dir: collections
+collections:
+  posts:
+    output: false
+    section_order: 0
+  event_planning:
+    output: true
+    name: Event Planning, Checklist & Budget
+    section_order: 1
+  exclusive_services:
+    output: true
+    name: Exclusive Services
+    section_order: 2
+  event_operations_team:
+    output: true
+    name: ACCD Event Operations Team
+    section_order: 3
+  event_insurance:
+    output: true
+    name: Event Insurance
+    section_order: 4
+  event_invoice:
+    output: true
+    name: Event Invoice
+    section_order: 5
+  utilities:
+    output: true
+    name: Utilities
+    section_order: 6
+  technology:
+    output: true
+    name: Technology
+    section_order: 7
+  food_and_beverage:
+    output: true
+    name: F&B / Catering
+    section_order: 8
+  safety_and_security:
+    output: true
+    name: Safety & Security
+    section_order: 9
+  room_specifications:
+    output: true
+    name: Room Specifications
+    section_order: 10
+  move_in_move_out:
+    output: true
+    name: Move In/Show/Move out
+    section_order: 11
+  equipment_labor_and_changeovers:
+    output: true
+    name: Equipment, Labor and Changeovers 
+    section_order: 12
+  signage_rigging_and_decorations:
+    output: true
+    name: Signage, Rigging and decorations
+    section_order: 13
+  digital_sponsorship_and_branding:
+    output: true
+    name: Digital Sponsorship/Branding
+    section_order: 14
+  service_yard:
+    output: true
+    name: Service Yard
+    section_order: 15
+  parking:
+    output: true
+    name: Parking
+    section_order: 16
+  general_service_contractors:
+    output: true
+    name: Information to share with General Service Contractors
+    section_order: 17
+  exhibitor_guidelines_and_tools:
+    output: true
+    name: Exhibitor Guidelines & Tools
+    section_order: 18
+  building_measurements:
+    output: true
+    name: Building measurements 
+    section_order: 19
+  downloadable_resources:
+    output: true
+    name: Downloadable Resources
+    section_order: 20
+permalink: pretty
+defaults:
+  -
+    scope:
+      path: "collections/*/*.md"
+    values:
+      layout: "default"
+      permalink: /:collection/:title
+  -
+    scope:
+      path: "collections/*/index.md"
+    values:
+      layout: "section"
+      permalink: /:collection
+  -
+    scope:
+      path: "index.md"
+    values:
+      layout: "homepage"
+  -
+    scope:
+      path: "pdf.md"
+    values:
+      layout: "pdf"
+
